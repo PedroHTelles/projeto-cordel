@@ -13,8 +13,8 @@
 }
 
 :root{
-    --letra-destaque: PassionOne-Bold;
-    --letra-poema: Sriracha-Regular;
+    --letra-destaque: PassionOne-Bold, cursive;
+    --letra-poema: Sriracha-Regular, cursive;
 }
 
 *{
@@ -22,9 +22,11 @@
     padding: 0;
 }
 
+html , body{
+    min-height: 100vh;
+}
 
-
-
+/*-------------------------------------------------*/
 
 header{
     background-color: black;
@@ -35,7 +37,8 @@ header{
 }
 
 header h1{
-    font-family: var(--letra-destaque), Arial, Helvetica, sans-serif;
+    font-family: var(--letra-destaque);
+    font-variant: small-caps;
     color: white;
     font-size: 10vw;
 
@@ -56,13 +59,15 @@ header a:hover{
     text-decoration: underline;
 }
 
-
+/*------------------------------------------------*/
 
 main p{
     font-family: var(--letra-poema);
     font-size: 3.5vw;
 
-    margin-left: 30px;
+    margin: 70px 35px;
+
+    line-height: 2em;
 }
 
 main section.fundo-imagem{
@@ -70,6 +75,11 @@ main section.fundo-imagem{
     background-attachment: fixed;
     background-position: right center;
     background-size: cover;
+    background-color: rgb(103, 103, 103);
+
+    box-shadow: inset 5px 5px 8px rgba(0, 0, 0, 0.515);
+
+    padding: 35px 0;
 }
 
 main section#segunda-imagem{
@@ -85,13 +95,18 @@ main section.fundo-imagem p{
 
     padding: 5px;
 
-    margin-top: 35px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.456);
+
+    border-radius: 2px;
 }
 
+/*------------------------------------------------*/
 
 footer{
     background-color: black;
+
     padding: 10px;
+    
     text-align: center;
 }
 
